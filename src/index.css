@@ -13,3 +13,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.react-icons {
+  font-family: 'react-icons';
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(255, 0, 0);
+  /* stroke: black;
+  stroke-width: 0.1px; */
+}

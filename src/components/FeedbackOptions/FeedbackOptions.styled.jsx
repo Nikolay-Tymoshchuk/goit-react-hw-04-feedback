@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
 
-export const FeedbackWidget = styled.div`
+export const Buttons = styled.div`
   display: flex;
 `;
