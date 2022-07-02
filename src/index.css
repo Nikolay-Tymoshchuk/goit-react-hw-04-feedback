@@ -3,8 +3,8 @@
 :root {
   --color-text-primary: rgb(88, 88, 88);
   --color-background-primary: rgb(239, 241, 255);
-  --color-positive: #3c8f3c;
-  --color-negative: #da0303;
+  --color-positive: #83d400;
+  --color-negative: #f85d03;
 }
 
 body {

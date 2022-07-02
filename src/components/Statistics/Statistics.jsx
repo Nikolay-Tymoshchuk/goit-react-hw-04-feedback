@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BsEmojiSmile, BsEmojiNeutral, BsEmojiFrown } from 'react-icons/bs';
 import {
   Table,
@@ -43,6 +44,14 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       </tbody>
     </Table>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
