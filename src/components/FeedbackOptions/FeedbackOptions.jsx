@@ -1,30 +1,20 @@
-// import { Component } from 'react';
+import { Button, ButtonGroup } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <ButtonGroup>
       {options.map(option => {
         return (
-          <button
+          <Button
             key={option}
+            data-status={option}
             onClick={() => onLeaveFeedback(option)}
-            style={{
-              backgroundColor: '#010101',
-              color: '#fff',
-              border: 'none',
-              padding: '10px',
-              margin: '10px',
-              borderRadius: '5px',
-              fontSize: '20px',
-              fontWeight: 'bold',
-              cursor: 'pointer',
-            }}
           >
             {option}
-          </button>
+          </Button>
         );
       })}
-    </div>
+    </ButtonGroup>
   );
 };
 

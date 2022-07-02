@@ -3,6 +3,7 @@ import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import Notification from './Notification';
 import Section from './Section';
+import { Container } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -25,9 +26,9 @@ export class App extends Component {
     return Math.round((good / total) * 100);
   }
 
-  onLeaveFeedback = option => {
+  onLeaveFeedback = label => {
     this.setState(prevState => ({
-      [option]: prevState[option] + 1,
+      [label]: prevState[label] + 1,
     }));
   };
 
@@ -35,18 +36,7 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     const options = Object.keys(this.state);
     return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'inline-flex',
-          flexDirection: 'column',
-          alignItems: 'start',
-          justifyContent: 'start',
-          // alignItems: 'center',
-          fontSize: 40,
-          color: '#010101',
-        }}
-      >
+      <Container>
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -67,10 +57,7 @@ export class App extends Component {
             ></Statistics>
           )}
         </Section>
-
-        {/* <Section title="Please leave feedback"></Section> */}
-        {/* <Section title="Statistics"></Section> */}
-      </div>
+      </Container>
     );
   }
 }

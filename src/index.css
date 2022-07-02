@@ -1,6 +1,14 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+
+:root {
+  --color-text-primary: rgb(88, 88, 88);
+  --color-background-primary: rgb(239, 241, 255);
+  --color-positive: #3c8f3c;
+  --color-negative: #da0303;
+}
 
 body {
+  box-sizing: border-box;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,13 +20,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.react-icons {
-  font-family: 'react-icons';
-  font-weight: normal;
-  font-style: normal;
-  color: rgb(255, 0, 0);
-  /* stroke: black;
-  stroke-width: 0.1px; */
 }

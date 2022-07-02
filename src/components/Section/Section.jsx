@@ -1,17 +1,11 @@
+import { Box, Title } from './Section.styled';
+
 const Section = ({ title, children }) => {
   return (
-    <div
-      style={{
-        width: '100%',
-        backgroundColor: '#f5f5f5',
-        // padding: '2rem',
-        // margin: '2rem',
-        borderRadius: '1rem',
-      }}
-    >
-      <h2>{title}</h2>
+    <Box>
+      <Title>{title}</Title>
       {children}
-    </div>
+    </Box>
   );
 };
 
