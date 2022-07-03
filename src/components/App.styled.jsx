@@ -12,5 +12,6 @@ export const Container = styled.div`
   color: var(--color-text-primary);
   border-radius: 10px;
   padding: 8px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.8);
+  background-color: var(--color-text-primary);
 `;

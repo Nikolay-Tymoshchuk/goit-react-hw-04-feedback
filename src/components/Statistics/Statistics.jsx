@@ -7,6 +7,7 @@ import {
   Positive,
   Negative,
   TotalPositive,
+  Cell,
 } from './Statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
@@ -14,29 +15,29 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     <Table>
       <tbody>
         <Positive>
-          <td>
+          <Cell>
             <BsEmojiSmile />
-          </td>
+          </Cell>
           <Numbers>{good}</Numbers>
         </Positive>
         <Row>
-          <td>
+          <Cell>
             <BsEmojiNeutral />
-          </td>
+          </Cell>
           <Numbers>{neutral}</Numbers>
         </Row>
         <Negative>
-          <td>
+          <Cell>
             <BsEmojiFrown className="react-icons" />
-          </td>
+          </Cell>
           <Numbers>{bad}</Numbers>
         </Negative>
         <Row>
-          <td>Total</td>
+          <Cell>Total</Cell>
           <Numbers>{total}</Numbers>
         </Row>
         <Row>
-          <td>Positive feedback</td>
+          <Cell>Positive feedback</Cell>
           <TotalPositive value={positivePercentage}>
             {positivePercentage} %
           </TotalPositive>

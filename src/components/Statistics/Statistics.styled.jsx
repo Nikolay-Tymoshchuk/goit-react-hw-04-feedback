@@ -1,13 +1,18 @@
 import styled from '@emotion/styled';
 
-export const Numbers = styled.td`
-  width: 40%;
+export const Cell = styled.td`
+  text-indent: 5%;
+  padding: 8px;
+`;
+
+export const Numbers = styled(Cell)`
   text-align: center;
+  width: 40%; ;
 `;
 
 export const Row = styled.tr`
   &:nth-of-type(even) {
-    background-color: #f7f7f7;
+    background-color: #312f42;
   }
 `;
 export const Table = styled.table`

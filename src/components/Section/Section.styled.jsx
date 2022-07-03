@@ -4,7 +4,8 @@ export const Title = styled.h2`
   font-size: 1.5em;
 `;
 export const Box = styled.div`
-  width: 100%;
+  width: calc(100% - 16px);
+  padding: 8px;
   background-color: var(--color-background-primary);
   &:first-of-type {
     border-top-left-radius: inherit;
