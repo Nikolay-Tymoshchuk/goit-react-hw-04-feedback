@@ -1,7 +1,7 @@
 @import-normalize;
 
 :root {
-  --color-text-primary: rgb(110, 110, 110);
+  --color-text-primary: rgb(180, 180, 180);
   --color-background-primary: rgb(12, 12, 14);
   --color-positive: #72b900;
   --color-negative: #c41d00;
