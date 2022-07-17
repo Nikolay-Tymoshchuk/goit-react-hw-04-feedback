@@ -53,7 +53,7 @@ export function App() {
       </Section>
 
       <Section title={'Statistics'}>
-        {countPositiveFeedbackPercentage() === 0 ? (
+        {totalFeedbackVotesCount === 0 ? (
           <Notification message="There is no feedback" />
         ) : (
           <Statistics
